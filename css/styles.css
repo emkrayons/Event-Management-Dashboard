@@ -1,0 +1,675 @@
+/* styles.css */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #334155;
+}
+
+header {
+  background-color: #ffffff;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* Adding some padding to make the chart visible */
+.canvas {
+  border: 2px solid #f2f2f7;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  
+}
+
+.content {
+  display: block; /* Initially visible */
+}
+
+.sidebar {
+  cursor: pointer;
+  display: none;
+  padding: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: #333;
+}
+
+.sidebar-items {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.sidebar-items img {
+  margin-right: 10px; /* Space between image and text */
+  color: #ada9bb;
+}
+
+.sidebar-items span {
+  font-size: 14px; /* Adjusting text size */
+  font-weight: 400;
+  line-height: 20px;
+  color: #334155;
+}
+
+.content {
+  font-size: 17px;
+  padding: 0 20px 0 20px;
+}
+
+.text-figures {
+  border: 2px solid #f2f2f7;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.text-figures span {
+  padding-inline: 8px;
+}
+
+.inside-text-figures {
+  padding: 16px;
+}
+
+/* Image Slider */
+.image-slider {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Images inside the slider */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none; /* Initially hiding all slides */
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Positioning elements inside relative to the slide */
+}
+
+/* Displaying the active slide */
+.slide.active {
+  display: flex;
+}
+
+.image-slider .text {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.image-slider img {
+  border-radius: 4px;
+  width: 100%;
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+/* Previous & next buttons */
+#prev,
+#next {
+  position: absolute;
+  transform: translateY(-50%);
+  color: white;
+  border: none;
+  padding: 10px;
+  z-index: 1000;
+  font-size: 18px;
+}
+
+#prev {
+  left: 0;
+}
+
+#next {
+  right: 0;
+}
+
+/* Adding a hover effect to buttons */
+.image-slider .arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-slider .btn img {
+  cursor: pointer;
+}
+
+/* The slider container */
+.image-slider {
+  position: relative;
+}
+
+/* Indicators container within the image */
+.indicators {
+  position: absolute;
+  bottom: 10px; /* Positioning the dots at the bottom of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+/* The dots styling */
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 5px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /* Slight transparency for a subtle look */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+}
+
+/* Active dot */
+.active-dot {
+  background-color: #ffffff; /* Fully white for the active dot */
+}
+
+/* Adjusting the position of the text on the image so it's not too close to the dots */
+.image-slider .text {
+  position: absolute;
+  top: 35%;
+  left: 3%;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* search bar */
+.search-bar {
+  width: 95%;
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.search-bar button {
+  cursor: pointer;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input-container img {
+  margin-left: 10px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#search-input {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/*Filters*/
+.search-bar1 {
+  margin-top: 12px;
+  width: 91%;
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Sorting */
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.sort div {
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  gap: 25px;
+}
+
+.sort1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.sort1 div {
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 20px;
+  gap: 25px;
+}
+
+/* Event Name and Status  */
+.event-contents {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 40px;
+}
+.event {
+  background-color: #f1f5f9;
+  width: 100%;
+}
+
+/* event-names */
+.event-names {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+  margin-top: 20px;
+  margin: 30px;
+  align-content: flex-start;
+}
+
+.event-names .status {
+  background-color: #10b981;
+  border-radius: 30px;
+  padding: 7px 20px 7px 20px;
+  font-size: 12px;
+}
+
+/* Number Navigation */
+.number-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.number-nav .left {
+  background-color: #e2e8f0;
+  padding: 10px 18px 10px 18px;
+}
+
+.number-nav .num {
+  background-color: #8576ff;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.number-nav .row {
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item img {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+/* Button styles */
+#toggleModeBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+
+
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #484554; /* Dark background */
+  color: white; /* All text in dark mode will be white */
+}
+
+/* Targeting specific text elements in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode a,
+body.dark-mode li {
+  color: white; /* Ensuring all text elements are white */
+}
+
+body.dark-mode header {
+  background-color: #6a6676; /* Dark background for header */
+  color: white; /* Text color in header */
+  border-bottom: 2px solid #475569; /* Adjusting border color for dark mode */
+}
+
+body.dark-mode .text-figures .inside-text-figures span {
+  color: white !important; /* Setting all span elements to white */
+}
+
+body.dark-mode .text-figures {
+  background-color: #6a6676;
+  border: 2px solid #6a6676;
+}
+
+/* Explicitly keeping the green and red text unchanged in dark mode */
+body.dark-mode .text-figures .inside-text-figures span[style*="color: #10b981"],
+body.dark-mode
+  .text-figures
+  .inside-text-figures
+  span[style*="color: #f43f5e"] {
+  color: inherit !important; /* Keeping green and red colors */
+}
+
+body.dark-mode
+  .text-figures
+  .inside-text-figures
+  span[style*="color: #10b981"] {
+  color: #10b981 !important; /* Force green color */
+}
+
+body.dark-mode
+  .text-figures
+  .inside-text-figures
+  span[style*="color: #f43f5e"] {
+  color: #f43f5e !important; /* Force red color */
+}
+/* Toggle switch styles */
+.switch {
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 25px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.switch:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 2.5px;
+  transition: transform 0.3s;
+}
+
+/* Switch for dark mode */
+body.dark-mode .switch {
+  background-color: #4b5563; /* Dark switch background */
+}
+
+body.dark-mode .switch:before {
+  transform: translateX(25px); /* Move switch to the right */
+}
+
+/* search-input-container dark mode */
+body.dark-mode .search-bar,
+body.dark-mode .search-bar1 {
+  background-color: #6a6676;
+  border: 2px solid #6a6676;
+}
+
+body.dark-mode .search-icon {
+  background-color: #ffffff;
+}
+
+body.dark-mode .event,
+body.dark-mode .event-names {
+  background-color: #6a6676;
+}
+
+body.dark-mode .event-names div {
+  padding: 10px 20px 10px 20px;
+  color: white !important;
+}
+
+
+
+
+
+/* Styles for tablets */
+/* @media (min-width: 768px) {
+  .container {
+    flex-direction: row; Change layout for larger screens
+    padding: 20px;
+  }
+} */
+
+
+
+/* Styles for Laptop */
+@media (min-width: 1024px) {
+  .container {
+  
+    margin: 0 auto;
+  }
+
+  #openSidebarBtn, #closeSidebarBtn{
+    display: none;
+  }
+  
+  .sidebar {
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: #333;
+    position: absolute;
+  }
+
+.content{
+  float:right;
+  width: 85%;
+  position: relative;
+}
+
+.text-figures-container{
+  display: flex;
+ gap: 20px;
+}
+
+.text-figures{
+  width: 100%;
+}
+
+.canvas-image{
+  display: flex;
+  gap: 2%;
+}
+
+.canvas{
+  width: 50%;
+ 
+}
+
+.image-slider{
+  width: 50%;
+  height: 25rem;
+}
+
+.filters{
+  display: flex;
+ align-items: center;
+ justify-items: center;
+ gap: 5px;
+}
+
+
+.search-bar {
+  width: 40%;
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.search-bar button {
+  cursor: pointer;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input-container img {
+  margin-left: 10px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#search-input {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/*Filters*/
+.search-bar1 {
+  margin-top: 0;
+  width: 10%;
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+
+/* Sorting */
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.sort div {
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 10px;
+  display: flex;
+  gap: 2px;
+}
+
+.sort1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.sort1 div {
+  border: 1px solid #e2e8f0;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 20px;
+  gap: 2px;
+}
+
+.displaying-results{
+  font-size: 10px;
+}
+
+
+
+
+
+
+footer{
+  display: none;
+}
+
+
+
+    #myChart {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for desktop */
+/* @media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+} */

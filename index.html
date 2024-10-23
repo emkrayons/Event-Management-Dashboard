@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Management Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div><img src="img/Logo.png" style="cursor: pointer" /></div>
+      <button id="openSidebarBtn">
+        <img src="img/Icon Button.png " style="cursor: pointer" />
+      </button>
+      <button id="closeSidebarBtn" style="display: none; cursor: pointer">
+        <img src="img/Vector (1).png" />
+      </button>
+    </header>
+
+    <div class="container">
+      <nav class="sidebar">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar-items">
+          <img src="img/home.png" alt="Home" />
+          <span>Home</span>
+        </div>
+        <div class="sidebar-items">
+          <img src="img/Groupa.png" alt="Events" />
+          <span>Events</span>
+        </div>
+        <div class="sidebar-items">
+          <img src="img/Groups.png" alt="Speakers" />
+          <span>Speakers</span>
+        </div>
+        <div class="sidebar-items">
+          <img src="img/Group.png" alt="Reports" />
+          <span>Reports</span>
+        </div>
+        <div class="sidebar-items">
+          <img src="img/Vector.png" alt="Notifications" />
+          <span>Notifications</span>
+        </div>
+        <div class="sidebar-items">
+          <img src="img/double-chat-bubble.png" alt="Messages" />
+          <span>Messages</span>
+        </div>
+        <div class="sidebar-items">
+          <img src="img/settings-2.png" alt="Settings" />
+          <span>Settings</span>
+        </div>
+        <div class="sidebar-items">
+          <button id="toggleModeBtn">
+            <div class="switch"></div>
+            Dark mode
+          </button>
+        </div>
+        <div class="sidebar-items">
+          <img src="img/Avatar.png" alt="Rudri Devi" />
+          <span>Rudra Devi</span>
+       
+        </div>
+      </nav>
+
+      <main class="content">
+        <p>Welcome! here's your summary</p>
+
+        <div class="text-figures-container">
+          <!-- card 1 -->
+          <div class="text-figures">
+            <div class="inside-text-figures">
+              <span
+                style="
+                  color: #64748b;
+                  font-size: 16px;
+                  font-weight: 600;
+                  line-height: 24px;
+                "
+                >Total Events</span
+              ><img src="img/information.png" alt="info" /><br />
+              <span
+                style="
+                  color: #334155;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 32px;
+                "
+                >100,000</span
+              ><img src="img/arrow-up-right.png" alt="arrow-up-right" /><span
+                style="
+                  color: #10b981;
+                  font-size: 10px;
+                  font-weight: 600;
+                  line-height: 12px;
+                "
+                >+5.0%</span
+              >
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="text-figures">
+            <div class="inside-text-figures">
+              <span
+                style="
+                  color: #64748b;
+                  font-size: 16px;
+                  font-weight: 600;
+                  line-height: 24px;
+                "
+                >Active Speakers</span
+              ><img src="img/information.png" alt="info" /><br />
+              <span
+                style="
+                  color: #334155;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 32px;
+                "
+                >25</span
+              ><img
+                src="img/arrow-down-right.png"
+                alt="arrow-down-right"
+              /><span
+                style="
+                  color: #f43f5e;
+                  font-size: 10px;
+                  font-weight: 600;
+                  line-height: 12px;
+                "
+                >-5.0%</span
+              >
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="text-figures">
+            <div class="inside-text-figures">
+              <span
+                style="
+                  color: #64748b;
+                  font-size: 16px;
+                  font-weight: 600;
+                  line-height: 24px;
+                "
+                >Total Registrations</span
+              ><img src="img/information.png" alt="info" /><br />
+              <span
+                style="
+                  color: #334155;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 32px;
+                "
+                >300</span
+              ><img src="img/arrow-up-right.png" alt="arrow-up-right" /><span
+                style="
+                  color: #10b981;
+                  font-size: 10px;
+                  font-weight: 600;
+                  line-height: 12px;
+                "
+                >+5.0%</span
+              >
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="text-figures">
+            <div class="inside-text-figures">
+              <span
+                style="
+                  color: #64748b;
+                  font-size: 16px;
+                  font-weight: 600;
+                  line-height: 24px;
+                "
+                >Total Revenue</span
+              ><img src="img/information.png" alt="info" /><br />
+              <span
+                style="
+                  color: #334155;
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 32px;
+                "
+                >$500,000</span
+              ><img src="img/arrow-up-right.png" alt="arrow-up-right" /><span
+                style="
+                  color: #10b981;
+                  font-size: 10px;
+                  font-weight: 600;
+                  line-height: 12px;
+                "
+                >+5.0%</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Registrations per month -->
+        <h3>Event Registrations per month</h3>
+
+        <div class="canvas-image">
+          <!-- Bar Chart Canvas -->
+          <div class="canvas">
+            <canvas id="myBarChart" width="400" height="300"></canvas>
+          </div>
+
+          <!-- slider image1 -->
+          <div class="image-slider">
+            <div class="slider">
+              <div class="slide">
+                <img src="img/Slide (1).png" alt="first-image" />
+                <div class="text">
+                  <!-- Navigation buttons -->
+
+                  <div class="arrows">
+                    <span class="btn" id="prev" onclick="prevSlide()"
+                      ><img src="img/Left Button.png" alt="left"
+                    /></span>
+                    <span class="btn" id="next" onclick="nextSlide()"
+                      ><img src="img/Right Button.png" alt="right"
+                    /></span>
+                  </div>
+
+                  <h4>Latest News & Updates</h4>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, explicabo. Consequatur, quos mollitia magnam sunt eum
+                  reiciendis! Ab, molestias beatae! Doloribus, adipisci iure!
+                  Facere debitis, porro molestiae quaerat nesciunt nulla.
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="img/Slide.png" alt="first-image" />
+                <div class="text">
+                  <!-- Navigation buttons -->
+
+                  <div class="arrows">
+                    <span class="btn" id="prev" onclick="prevSlide()"
+                      ><img src="img/Left Button.png" alt="left"
+                    /></span>
+                    <span class="btn" id="next" onclick="nextSlide()"
+                      ><img src="img/Right Button.png" alt="right"
+                    /></span>
+                  </div>
+
+                  <h4>Latest News & Updates</h4>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, explicabo. Consequatur, quos mollitia magnam sunt eum
+                  reiciendis! Ab, molestias beatae! Doloribus, adipisci iure!
+                  Facere debitis, porro molestiae quaerat nesciunt nulla.
+                </div>
+              </div>
+
+              <div class="slide">
+                <img src="img/Slide (2).png" alt="first-image" />
+                <div class="text">
+                  <!-- Navigation buttons -->
+
+                  <div class="arrows">
+                    <span class="btn" id="prev" onclick="prevSlide()"
+                      ><img src="img/Left Button.png" alt="left"
+                    /></span>
+                    <span class="btn" id="next" onclick="nextSlide()"
+                      ><img src="img/Right Button.png" alt="right"
+                    /></span>
+                  </div>
+
+                  <h4>Latest News & Updates</h4>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugit, explicabo. Consequatur, quos mollitia magnam sunt eum
+                  reiciendis! Ab, molestias beatae! Doloribus, adipisci iure!
+                  Facere debitis, porro molestiae quaerat nesciunt nulla.
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide indicators (dots) -->
+            <div class="indicators">
+              <span class="dot" onclick="currentSlide(0)"></span>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+          </div>
+        </div>
+        <!-- Events History -->
+        <h3>Events History</h3>
+
+        <div class="filters">
+          <!-- Search Bar -->
+          <div class="search-bar">
+            <div class="search-input-container">
+              <button onclick="performSearch()">
+                <img
+                  src="img/pngwing.com (72).png"
+                  alt="Search Icon"
+                  class="search-icon"
+                />
+              </button>
+
+              <input type="text" id="search-input" placeholder="Search..." />
+            </div>
+            <div id="searchResults">
+              <!-- Search results will appear here -->
+            </div>
+          </div>
+
+          <!-- Date Filter -->
+          <div class="search-bar1">
+            <span>Date</span>
+            <img
+              src="img/chevron-down.png"
+              alt="Search Icon"
+              class="search-icon"
+            />
+          </div>
+
+          <!-- Status Filter -->
+          <div class="search-bar1">
+            <span>Status</span>
+            <img
+              src="img/chevron-down.png"
+              alt="Search Icon"
+              class="search-icon"
+            />
+          </div>
+
+          <!-- Name Filter -->
+          <div class="search-bar1">
+            <span>Name</span>
+            <img
+              src="img/chevron-down.png"
+              alt="Search Icon"
+              class="search-icon"
+            />
+          </div>
+<div class="displaying-results">
+  <h3>Displaying 100 results</h3>
+</div>
+          
+
+          <div class="sort">
+            <span>Sort:</span>
+            <div>Most Recent <img src="img/chevron-down.png" alt="down" /></div>
+          </div>
+
+          <div class="sort1">
+            <div style="width: 30px; text-align: center">
+              <img src="img/dots.png" alt="dots" />
+            </div>
+            <div class="icon sort1">
+              <img src="img/download (2).png" alt="dots" /><span
+                style="padding-left: 15px"
+                >Export</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Event Name and Status -->
+        <div class="event">
+          <div class="event-contents">
+            <span>Event Name</span>
+            <span>Status</span>
+          </div>
+        </div>
+
+        <!-- Event-Names -->
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">
+            Cloud Innovation Summit
+          </div>
+          <div class="status">Completed</div>
+        </div>
+
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">
+            Blockchain Revolution <br />Conference
+          </div>
+          <div class="status">Completed</div>
+        </div>
+
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">
+            AI in Healthcare Symposium
+          </div>
+          <div class="status">Completed</div>
+        </div>
+
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">
+            Future of Fintech Forum
+          </div>
+          <div class="status">Completed</div>
+        </div>
+
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">
+            Data Analytics in Business
+          </div>
+          <div class="status">Completed</div>
+        </div>
+
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">
+            Sustainable Energy Expo
+          </div>
+          <div class="status">Completed</div>
+        </div>
+
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">
+            Web3 Interfaces Workshop
+          </div>
+          <div class="status">Completed</div>
+        </div>
+
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">
+            Cybersecurity for Startups
+          </div>
+          <div class="status">Completed</div>
+        </div>
+
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">Smart cities Forum</div>
+          <div class="status">Completed</div>
+        </div>
+
+        <div class="event-names">
+          <div>
+            <img src="img/Vector (4).png" alt="right arrow" />
+          </div>
+          <div style="color: #334155; font-size: 14px">Tech Safari Mixer</div>
+          <div class="status">Completed</div>
+        </div>
+
+        <!-- Number Navigation -->
+
+        <div class="number-nav">
+          <div class="left">
+            <img src="img/Vectorr.png" alt="left" />
+          </div>
+          <span class="num"> 1 </span>
+          <span> 2 </span>
+          <span> 3 </span>
+          <div>
+            <img src="img/Vector (4).png" alt="right" />
+          </div>
+
+          <div>
+            <div class="row">
+              <span>10 rows</span>
+              <img src="img/chevron-down.png" alt="down" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="nav-item">
+        <img src="img/home.png" alt="home" />
+        <p>Home</p>
+      </div>
+
+      <div class="nav-item">
+        <img src="img/Groupa.png" alt="Events" />
+        <p>Events</p>
+      </div>
+
+      <div class="nav-item">
+        <img src="img/Groups.png" alt="Speakers" />
+        <p>Speakers</p>
+      </div>
+
+      <div class="nav-item">
+        <img src="img/Group.png" alt="Reports" />
+        <p>Reports</p>
+      </div>
+
+      <div class="nav-item">
+        <img src="img/Avatar.png" alt="Profile" />
+        <p>Profile</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
